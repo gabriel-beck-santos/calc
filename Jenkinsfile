@@ -1,6 +1,7 @@
 pipeline {
     agent any
-    parameters {
+	
+    parameters { 
         string(name: 'DOCKER_IMAGE_NAME', defaultValue: 'image_name', description: 'Docker image name')
         string(name: 'DOCKER_CONTAINER_NAME', defaultValue: 'container_name', description: 'Docker container name')
         string(name: 'DOCKER_PORT', defaultValue: '3000', description: 'Docker port')
