@@ -7,7 +7,9 @@ pipeline{
 
     stages{
         stage('docker build'){
-            sh "docker build -t ${DOCKER_IMAGE_NAME} ."
+            steps{
+                sh "docker build -t ${DOCKER_IMAGE_NAME} ."
+            }
         }
     }
 }
